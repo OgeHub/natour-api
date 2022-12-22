@@ -1,6 +1,7 @@
 # Natour
 
   **Introduction**: This API is a result of the current course I am taking on Udemy by [Jonas Schmedtmann](https://codingheroes.io/).  
+  
   **Description**: Natour privides API of different resources required to properly manage tours. These resoures includes:  
   1. Authentication and Authorisation  
   2. User  
@@ -11,6 +12,6 @@
   
   
   **Updates includes**:
-  1. Creation `Booking` resource.
+  1. Creation of `Booking` resource.
   2. More deatils on the postman documentation
   3. Natour live link
