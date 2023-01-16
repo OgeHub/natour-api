@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
@@ -16,6 +17,9 @@ const reviewRouter = require('./routes/reviewRoutes');
 const app = express();
 
 // Middleware
+// Serving static files
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Set HTTP security
 app.use(helmet());
 
@@ -54,9 +58,6 @@ app.use(
     ],
   })
 );
-
-// Serving static files
-app.use(express.static(`${__dirname}/public`));
 
 // Test middleware
 app.use((req, res, next) => {
