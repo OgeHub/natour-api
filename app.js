@@ -1,5 +1,5 @@
-const path = require('path');
 const express = require('express');
+const cors = require('cors');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -18,8 +18,8 @@ const bookingRouter = require('./routes/bookingRoutes');
 const app = express();
 
 // Middleware
-// Serving static files
-app.use(express.static(path.join(__dirname, 'public')));
+// Enable CORS
+app.use(cors());
 
 // Set HTTP security
 app.use(helmet());
@@ -39,6 +39,7 @@ app.use('/api', limiter);
 
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
+app.use(express.urlencoded());
 
 // Data sanitization against NoSQL query injection
 app.use(mongoSanitize());
