@@ -1,6 +1,6 @@
 # Natour
 
-  **Introduction**: This API is a result of the current course I am taking on Udemy by [Jonas Schmedtmann](https://codingheroes.io/).  
+  **Introduction**: Having gone through a Node.js course on Udemy by [Jonas Schmedtmann](https://codingheroes.io/), I began working on this project.  
   
   **Description**: Natour privides API of different resources required to properly manage tours. These resoures includes:  
   1. Authentication and Authorisation  
@@ -8,7 +8,7 @@
   3. Tour  
   4. Review 
   
-  **Documentation**: [Click here](https://www.postman.com/bold-escape-741874/workspace/3952466d-52e6-4ef0-bc6e-c62ce375f941/collection/17665617-b0b6c6b8-18cb-4de6-bba5-7ad801e5a9a5) to access Natour's documentation on my postman public workspace.
+  **Documentation**: [Click here](https://www.postman.com/security-operator-67026219/workspace/oge-s-potman/collection/25249871-6594e545-6e9e-4a67-893b-712a0e3607b5?action=share&creator=25249871) to access Natour's documentation on my postman public workspace.
   
   
   **Updates includes**:
