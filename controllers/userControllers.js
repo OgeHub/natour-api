@@ -92,7 +92,7 @@ const deleteMe = catchAsync(async (req, res, next) => {
   });
 });
 
-const getUser = factory.createOne(User);
+const getUser = factory.getOne(User);
 const getAllUsers = factory.getAll(User);
 const updateUser = factory.updateOne(User);
 const deleteUser = factory.deleteOne(User);
