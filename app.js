@@ -37,6 +37,9 @@ const limiter = rateLimit({
 });
 app.use('/api', limiter);
 
+// Static file
+app.use(express.static('public'));
+
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: false }));
@@ -73,6 +76,9 @@ app.use((req, res, next) => {
 });
 
 // Routes
+app.get('/', (req, res) =>
+  res.status(200).sendFile(`${__dirname}/public/frontpage.html`)
+);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);

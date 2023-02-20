@@ -1,0 +1,33 @@
+body {
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3fab4;
+  color: #043b12;
+  font-weight: 700;
+}
+
+nav {
+  background-color: #aacf05fd;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.heart {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #dfa812fd;
+  background-color: #043b12;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a:hover {
+  color: #043b12;
+  background-color: #aacf05fd;
+}
