@@ -13,5 +13,5 @@
   
   **Updates includes**:
   1. Creation of `Booking` resource.
-  2. More deatils on the postman documentation
-  3. Natour live link
+  2. ~~More deatils on the postman documentation~~
+  3. ~~Natour live link~~
