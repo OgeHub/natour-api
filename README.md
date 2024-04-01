@@ -8,7 +8,7 @@
   3. Tour  
   4. Review 
   
-  **Documentation**: [Click here](https://documenter.getpostman.com/view/29759830/2sA35HXgej) to access Natour's documentation on my Postman public workspace.
+  **Documentation**: [Click here](https://documenter.getpostman.com/view/29759830/2sA35HXgej) to access Natour's API documentation on Postman.
   
   
   **Updates includes**:
