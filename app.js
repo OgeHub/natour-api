@@ -79,6 +79,12 @@ app.use((req, res, next) => {
 app.get('/', (req, res) =>
   res.status(200).sendFile(`${__dirname}/public/frontpage.html`)
 );
+app.get('/api/v1', (req, res) =>
+  res.status(200).json({
+    status: 'success',
+    message: 'Welcome to Natours API'
+})
+);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
